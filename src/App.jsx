@@ -8,6 +8,7 @@ export default function App() {
   return (
     <div class="bg-dark">
       <Navbar />
+      <About />
     </div>
   );
 }

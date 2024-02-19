@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 @import "../public/css/navbar.css";
+@import "../public/css/about.css";
 
 :root {
   --title-color: #66b2ff;
