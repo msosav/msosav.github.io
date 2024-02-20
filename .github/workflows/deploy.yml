@@ -29,8 +29,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm install --frozen-lockfile --non-interactive
-      - name: Build
-        run: npm run build
+      - name: Add Origin
+        run: git remote add origin https://github.com/msosav/msosav.github.io.git
       - name: Deploy to GitHub Pages
         id: deployment
         run: npm run deploy -- -m "Deploy React app to GitHub Pages"
