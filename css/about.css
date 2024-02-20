@@ -1,0 +1,28 @@
+.hero-title {
+  font-size: 3em;
+  text-align: left;
+  color: var(--title-color);
+}
+
+.hero-text {
+  font-size: 1.2em;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.hero-container {
+  max-width: 350px;
+}
+
+.hero-image {
+  min-height: 300px;
+}
+
+.hero-button {
+  background-color: var(--button-color);
+  color: var(--text-color);
+}
+
+.hero-button:hover {
+  background-color: rgba(var(--button-color), 0.9);
+}
