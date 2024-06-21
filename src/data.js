@@ -17,4 +17,10 @@ export const projects = [
     link: "https://github.com/msosav/Lookup",
     image: "./images/Lookup.png",
   },
+  {
+    title: "Game of Life",
+    languajes: "C++",
+    link: "https://github.com/msosav/Game-of-life",
+    image: "./images/GameOfLife.jpeg",
+  },
 ];
