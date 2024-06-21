@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 
 export default function App() {
   return (
-    <div class="bg-dark">
+    <div className="bg-dark">
       <Navbar />
       <About />
       <Projects />
