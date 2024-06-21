@@ -1,4 +1,6 @@
 import { projects } from "../data";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 export default function Projects() {
   return (
@@ -9,28 +11,62 @@ export default function Projects() {
             <h2 className="title">My Projects</h2>
           </div>
         </div>
-        <div className="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-          {projects.map((project) => (
-            <div className="col">
-              <div>
-                <img
-                  className="rounded img-fluid d-block w-100 fit-cover project-image"
-                  src={project.image}
-                />
-                <div className="py-4 text-center">
-                  <h4 className="title">{project.title}</h4>
-                  <p className="text">{project.languajes}</p>
-                  <a
-                    className="button btn m-1"
-                    href={project.link}
-                    type="button"
-                  >
-                    Source
-                  </a>
+        <div
+          id="carouselExampleControls"
+          className="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div className="carousel-inner">
+            {projects.map((project, index) => (
+              <div
+                className={`carousel-item ${index === 0 ? "active" : ""}`}
+                key={index}
+              >
+                <div className="card bg-transparent w-75 h-60 mx-auto">
+                  <img
+                    className="rounded img-fluid d-block fit-cover project-image"
+                    src={project.image}
+                    alt={project.title}
+                  />
+                  <div className="py-4 text-center">
+                    <h4 className="title">{project.title}</h4>
+                    <p className="text">{project.languajes}</p>
+                    <a
+                      className="button btn m-1"
+                      href={project.link}
+                      type="button"
+                    >
+                      Source
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
