@@ -24,7 +24,7 @@ export default function Projects() {
               >
                 <div className="card bg-transparent w-75 h-60 mx-auto">
                   <img
-                    className="rounded img-fluid d-block fit-cover project-image"
+                    className="rounded img-fluid project-image"
                     src={project.image}
                     alt={project.title}
                   />
