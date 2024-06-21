@@ -31,6 +31,15 @@ export default function Projects() {
                   <div className="py-4 text-center">
                     <h4 className="title">{project.title}</h4>
                     <p className="text">{project.languajes}</p>
+                    {project.demo && (
+                      <a
+                        className="button btn m-1"
+                        href={project.demo}
+                        type="button"
+                      >
+                        Demo
+                      </a>
+                    )}
                     <a
                       className="button btn m-1"
                       href={project.link}
