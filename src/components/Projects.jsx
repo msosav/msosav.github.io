@@ -36,6 +36,7 @@ export default function Projects() {
                         className="button btn m-1"
                         href={project.demo}
                         type="button"
+                        target="_blank"
                       >
                         Demo
                       </a>
@@ -44,6 +45,7 @@ export default function Projects() {
                       className="button btn m-1"
                       href={project.link}
                       type="button"
+                      target="_blank"
                     >
                       Source
                     </a>
